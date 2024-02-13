@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body {
+            background-color: #ffffff;
+            transition: all 0.3s;
+            height: 100%;
+        }
+
+
+        #button-container {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; /* Adjusted alignment */
+            height: 100%;
+            padding-right: 20px; /* Added padding */
+        }
+
+        .glass-btn {
+            width: 50px;
+            height: 50px;
+            background-color: #fafafa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+            margin-left: 0.5em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .glass-btn img {
+            width: 100%; 
+            height: 100%; 
+        }
+
+        .log img {
+            width: 400px;
+            height: 150px;
+        }
+
+        .image-container {
+            display: flex;
+        }
+
+        .image-container img {
+            margin-left: 10px; /* Adjusted margin */
+        }
+
+        nav {
+            background-color: #185be0;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .fancy-font {
+            font-family: cursive;
+        }
+
+        section {
+            padding: 20px;
+        }
+        
+        * {box-sizing:border-box}
+        /* CSS for slideshow */
+       .slideshow-container {
+        position: relative;
+        max-width: 900px;
+        margin: auto;
+        }
+
+        .mySlides {
+            display: none; /* Hide slides by default */
+            border: 3px solid #a6a6a7d0;
+            height: 500px; /* Set a fixed height for the slideshow */
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure images cover the entire slide */
+        }
+
+
+
+        .P1 {
+            padding: 20px; /* Increased padding for better spacing */
+            max-width: 700px;
+            height: 300px;
+            text-align: justify;
+            margin: 0 auto; /* Centering the elements */
+        }
+
+        .lit {
+            background-color: #00000075;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 1em;
+            position: flex;
+            bottom: 0 auto;
+        }
+        footer {
+            background-color: #185be0;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: flex;
+            bottom: 0 auto;
+        }
+
+        .form-container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="button-container">
+            <div class="log">
+                <a href="GSLINK3.HTML"><img src="logo1.jpeg" width="600" height="180"></a>
+            </div>
+            <div class="image-container">
+                <div class="glass-btn blue-btn">
+                    <img src="facebook.jpeg" alt="facebook">
+                </div>
+                <div class="glass-btn red-btn">
+                    <img src="tiktokicon.jpeg" alt="tiktok">
+                </div>
+                <div class="glass-btn amber-btn">
+                    <img src="instagram.jpeg" alt="instagram">
+                </div>
+            </div>
+        </div>
+    
+        <nav>
+            <a href="GSLINK3.HTML">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav><br>
+    
+        <h1 style="text-align: center;">COURSES</h1>
+
+        <h2 style="text-align: center;">Explore our wide range of courses to enhance your skills and advance your career.</h2>
+    
+        <h3 style="text-align: center; color: blue;">Download: <a href="GS LINK TRAINING PROGRAMMES1.pdf" download target="_blank">GS Link Solutions Courses</a></h3>
+        <br>
+        
+    
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="mySlides">
+                <img src="group.jpeg" alt="Slide 1">
+            </div>
+        
+            <div class="mySlides">
+                <img src="img7.jpeg" alt="Slide 2">
+            </div>
+        
+            <div class="mySlides">
+                <img src="img8.jpeg" alt="Slide 3">
+            </div>
+        
+            <div class="mySlides">
+                <img src="img1.jpeg" alt="Slide 4">
+            </div>
+        </div>
+    
+        <script>
+            let slideIndex = 0; // Initialize slide index to 0
+            showSlides(); // Call showSlides function initially
+        
+            function showSlides() {
+                let i;
+                const slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 5000); // Change slide every 10 seconds (10000 milliseconds)
+            }
+        </script>
+        
+        <br>
+
+        <div class="P1">
+                <h2 style="text-align: center;">Our Courses</h2>
+                <p style="text-align: center; font-size: larger;">At our institution, we offer a diverse selection of courses tailored to meet the needs of our students. Whether you're looking to acquire new skills, enhance your knowledge, or pursue a specific career path, we have something for everyone.</p>
+                <p style="text-align: center; font-size: larger;">Our courses cover a variety of subjects, including:</p>
+                <p style="text-align: center; font-size: larger;">Each course is taught by experienced instructors who are experts in their respective fields. We strive to provide a supportive learning environment that encourages collaboration and fosters success.</p>
+            </div>
+    
+        <div class="form-container">
+            <form> 
+                <h3>Inquiry Form</h3>
+                Fullname: <br>
+                <input type="text" id="fname" name="fname" size="50"><br>
+                Email: <br> 
+                <input type="email" id="email" name="email" size="50"><br>
+                Phone Number: <br>
+                <input type="tel" id="phone" name="phone" size="50"><br>
+                Message: <br>
+                <textarea id="comment" placeholder="Leave Your Message" name="comment" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Submit"><br>
+            </form>
+        </div>
+        <br>
+    
+        <div class="lit">
+            <p>
+                <a href="services.html">Our Services|</a>
+                <a href="contact.html">Contact Us|</a>
+            </p>
+        </div>
+    
+        <footer>
+            &copy; 2023 The Junction. All rights reserved.
+        </footer>
+    
+        <script>
+            // JavaScript functions for slideshow (plusSlides, currentSlide)
+            function plusSlides(n) {
+                // Your implementation
+            }
+    
+            function currentSlide(n) {
+                // Your implementation
+            }
+        </script>
+    
+    </body>
+
+</html>

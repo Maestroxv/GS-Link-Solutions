@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+html {
+  height:0 auto;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+        body {
+            background-color: #ffffff;
+            transition: all 0.3s;
+            height: 100%;
+        }
+
+
+        #button-container {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; /* Adjusted alignment */
+            height: 100%;
+            padding-right: 20px; /* Added padding */
+        }
+
+        .glass-btn {
+            width: 50px;
+            height: 50px;
+            background-color: #fafafa;
+            display: flex-end;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+            margin-left: 0.5em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .glass-btn img {
+            width: 100%; 
+            height: 100%; 
+        }
+
+        .log img {
+            width: 400px;
+            height: 150px;
+        }
+
+        .image-container {
+            display: flex;
+        }
+
+        .image-container img {
+            margin-left: 10px; /* Adjusted margin */
+        }
+
+        nav {
+            background-color: #185be0;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .cont {
+        margin-left: 100px;
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 25px;
+}
+
+map {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.txt {
+  font-size: 20px;
+  width: 400px;
+  height: 200px;
+
+}
+
+        .fancy-font {
+            font-family: cursive;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #185be0;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: flex;
+            bottom: 0 auto;
+        }
+
+        .lit {
+            background-color: #000000cc;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 1em;
+            position: flex;
+            bottom: 0 auto;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        </div>
+        <div id="button-container">
+            <div class="log">
+                <img src="logo1.jpeg" width="600" height="180">
+            </div>
+            <div class="image-container">
+                <div class="glass-btn blue-btn">
+                    <img src="facebook.jpeg" alt="facebook">
+                </div>
+    
+                <div class="glass-btn red-btn">
+                    <img src="tiktokicon.jpeg" alt="tiktok">
+                </div>
+    
+                <div class="glass-btn amber-btn">
+                    <img src="instagram.jpeg" alt="instagram">
+                </div>
+            </div>
+        </div>
+    
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav><br>
+    <h2 style="text-align: center; font-size: 30px;">Our Services</h2>
+    
+   <div class="cont">
+    <div class="imgbox"><img src="Honest-Air-Charater-300x279-1.png" width="450px" height="250px"></div>
+
+    <div class="txt"><p style="font-family: 'Times New Roman', Times, serif; font-size: 18px;" font">Welcome to GS Link Solutions, your trusted provider of exceptional air conditioning services. With a strong commitment to excellence, we pride ourselves on providing comprehensive solutions that meet the unique needs of our valued customers. We extend our expertise to earthmoving equipment and ensure optimal air conditioning performance for these specialized systems.</p></div>
+    </div>
+
+    <h2 style="text-align: center; font-size: 25px;">Administered Projects</h2>
+    <ul>
+        <li>We trade tested 40 Electricians from M2 Engineering Academy</li>
+        <li>Installed and Commisioned a three phase Low Voltage cables and conductor, the three phase Install, Joint and Terminate.</li>
+        <li>We trade tested 35 Electricians from SMK Holdings</li>
+        <li>We trade tested 20 Electricians from Bakone Technical Services</li>
+        <li>Trade tested 3 Electricians from Expert Mining Solutions</li>
+        <li>Trade tested 60 Electricians from EWSETA, with the ARPL programme included in our Training.</li>
+      </ul>
+    <div class="lit">
+            <p><a href="https://gslinksolutions.co.za/services/">Our Services|</a>
+                <a href="https://gslinksolutions.co.za/contact-us/">Contact Us|</a>
+            </div>
+        
+            <footer>
+                &copy; 2023 The Junction. All rights reserved.
+            </footer>
+        
+    </body>
+
+</html>
